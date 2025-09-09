@@ -2,10 +2,27 @@ body{
     background:url(Iconos/Fondo.jpeg) ;
 }
 h1{
-    background-color: #4CAF50;
     color: black;
     padding: 40px;
     text-align: center;
+}
+.mencion1{
+    position: absolute;
+    right: 40%;
+}
+.mencion2{
+    position: absolute;
+    right: 27%;
+}
+.m1{
+    right: 40%;
+    text-align: left;
+    font-size: 29px;
+}
+.m2{
+    text-align: start;
+    font-size: 40px ;
+
 }
 table{
     background-color: white;
@@ -133,8 +150,10 @@ p{
 }
 .item_list{
     border-radius: 30px;
-    background-color: blue;
+    background-color: rgba(255, 145, 0, 0.836);
+    box-shadow: 0 0 10px rgba(0,0,0,5);
     font-size-adjust: 1;
     height: 120%;
     width: 120%;
+    font-size: 29px;
 }
