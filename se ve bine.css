@@ -1,0 +1,140 @@
+body{
+    background:url(Iconos/Fondo.jpeg) ;
+}
+h1{
+    background-color: #4CAF50;
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+table{
+    background-color: white;
+}
+#hs{
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(191, 190, 99, 0.8);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,5);
+}
+a{
+    text-decoration: none;
+    color: #000000;
+}
+.columna{
+    margin: 10px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,5);
+    text-align: center;
+    display: block;
+}
+main{
+	padding: 20px;
+	justify-content: center;
+	align-items: flex-start;
+	display: flex;
+	}
+p{
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: 183px;
+    z-index: -1;
+    color: white;
+}
+.hc{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative
+    z-index -1;
+}
+
+
+/*aca comienza el estilisado del menu*/
+.nav{
+    background-color:black ;
+}
+.contenedor{
+    background-color: burlywood ;
+    
+    width: min(99%,1500px) ;
+    margin: 0 auto;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 40px;
+    
+    top: 100px;
+    z-index: 10;
+
+    --menu-icono: url(Iconos/Abrir.svg);
+    --transform-menu-show: translate(-100%);
+}
+.list_link{
+    color:white;
+    text-decoration: none;
+}
+.contenedor:has(.menu_check:checked){
+    --menu-icono: url(Iconos/cerrar.svg) ;
+    --transform-menu-show: translate(0);
+    table: display(none);
+    texto: display(none);
+    
+}
+.figura, .check{
+    z-index: 10;
+}
+.check{
+   
+    width: 40px;
+    height: 60px;
+    right: 10px;
+    background-image: var(--menu-icono);
+    background-size: cover;
+    cursor: pointer;
+    position: absolute; right: 63px;
+    transition: background-image .5s;
+}
+.menu_check{
+    width: 60px;
+    height: 60px;
+}
+
+.lista{
+    transform: var(--transform-menu-show);
+    position: fixed;
+    inset: 0 ;
+
+    display: grid;
+    place-content: center ;
+    gap: 2rem ;
+    text-align: center;
+
+    padding: 1.5rem 5%;
+    background-color: rgba(255, 217, 0, 0.753);
+    list-style: none;
+    box-shadow: 0 0 10px rgba(0,0,0,5);
+    transition: .5s transform;
+    height:90%;
+    width:90% ;
+    border-radius: 60px;
+}
+.menu_check{
+    display: none;
+}
+.menu_img{
+    height: 90px;
+    width: 100px;
+}
+.item_list{
+    border-radius: 30px;
+    background-color: blue;
+    font-size-adjust: 1;
+    height: 120%;
+    width: 120%;
+}
